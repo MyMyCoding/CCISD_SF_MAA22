@@ -1,0 +1,170 @@
+<html>
+<head><link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"><title>
+            Find out if your going to have an acid reflux?
+        </title></head>
+     
+<style type="text/css">
+     
+    body
+    {
+        background-color:#4F0CCD;
+        text-align:center;
+    }
+
+    form
+    {
+        background-color:#FED51D;
+        width:300px;
+        display:inline-block;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:20px;
+        padding-bottom:20px;
+        border-radius:20px;
+        height:300px;
+       text-align: center;
+    }
+
+    h1
+    {
+      color:white;
+      font-family: 'Oswald', sans-serif;
+
+    }
+
+    p
+    {
+        height:100px;
+        width:200px;
+        color:white;
+        font:20px;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        padding-left:50px;
+
+    }
+   
+    label
+    {
+      color:white;
+      font-family: 'Oswald', sans-serif;
+      size:80px;
+
+    }
+
+    button
+    {
+      font-color:white;
+      font-family: 'Oswald', sans-serif;
+      height:50px;
+      width:100px;
+
+    }
+   a
+    {
+      color:white;
+      text-decoration:none;
+      margin-top:100px;
+      font-family: 'Oswald', sans-serif;
+
+    }
+
+   
+
+</style>
+</head>
+   <body>
+<h1>
+    FIND OUT IF YOUR GOING TO HAVE AN ACID REFLUX!
+</h1>
+          <form id="f1">
+           <label>Enter pH value of your beverage, please!</label> <br><br>
+           <input type="text" id="a" > <br><br>
+         
+           
+           <input type="button" onclick="more_beverages()" value="Click here"><br><br>
+            <p id="p1"></p>
+           <input type="button" onclick="pH()" value="Common Beverages"><br><br>
+           <script type="text/javascript">
+           
+               function more_beverages()
+               {
+                
+               }
+               function pH()
+               
+         {
+               
+               let pH=[4,5,6];
+               let R=["Acid","Neutral","Base"];
+               val=document.getElementById("a").value;
+ 
+            if (val>0 && val<7)
+               {
+              let form1 = document.getElementById("f1").innerHTML;
+             
+             
+              document.getElementById('p1').innerHTML="You are more likely to experience heartburn, as the pH:"+val+"\n"+" signifies the beverage as acidic! <br>To learn more about similar beverages.";
+             
+              var link = document.createTextNode("CLICK HERE FOR MORE INFO");
+             var a = document.createElement('a');
+             
+              a.appendChild(link);
+              a.title = "This is Link";
+              a.href = "acidic.html";
+              document.body.appendChild(a);
+               //btn.innerHTML = "Save";
+               //let btn = document.createElement("button");
+             // btn.onclick = function () {
+              // document.body.appendChild(btn);
+             
+           
+               
+              }
+                if (val==7)
+               
+              {
+                let form1 = document.getElementById("f1").innerHTML;
+             
+             
+              document.getElementById('p1').innerHTML="You are more likely to experience no reaction, as the pH:"+val+"\n"+" signifies the beverage as water. <br>To learn more about similar beverages click here for more info.";
+             
+              var link = document.createTextNode("CLICK HERE FOR MORE INFO");
+             var a = document.createElement('a');
+             
+              a.appendChild(link);
+              a.title = "This is Link";
+              a.href = "neutral.html";
+              document.body.appendChild(a);
+
+                   /*alert("You are not likely to have an acid reflux, as the pH:"+val+"\n"+"To learn more about similar beverages, CLICK HERE");
+               document.getElementById('p1').innerHTML=val;*/
+               }
+
+
+
+                if (val>7 && val<14)
+               {
+                let form1 = document.getElementById("f1").innerHTML;
+             
+             
+              document.getElementById('p1').innerHTML="You are more likely to exoerience no reaction or this drive will help to reduce stomach acid instead, as the pH:"+val+"\n"+"<br>To learn more about similar beverages click here for more info.";
+             
+              var link = document.createTextNode("CLICK HERE FOR MORE INFO");
+             var a = document.createElement('a');
+             
+              a.appendChild(link);
+              a.title = "This is Link";
+              a.href = "basic.html";
+              document.body.appendChild(a);
+                   /*alert("You are not likely to have an acid reflux, as the pH:"+val+"\n"+"To learn more about similar beverages, CLICK HERE");
+                   document.getElementById('p1').innerHTML=val;*/
+               }
+           
+
+
+          }
+           </script>
+       </form>
+   </body>
+</html>
