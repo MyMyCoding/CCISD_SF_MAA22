@@ -21,7 +21,7 @@
         padding-top:20px;
         padding-bottom:20px;
         border-radius:20px;
-        height:300px;
+        height:320px;
        text-align: center;
     }
 
@@ -52,14 +52,27 @@
 
     }
 
-    button
+    #button1
     {
-      font-color:white;
+     color:#ffffff;
       font-family: 'Oswald', sans-serif;
-      height:50px;
-      width:100px;
+      height:25px;
+      width:75px;
+      border-radius:10px;
+      border-color:#444444;
+      background-color:#444444;
 
     }
+    #button2
+    {
+      color:#ffffff;
+      font-family: 'Oswald', sans-serif;
+      height:25px;
+      width:115px;
+      border-radius:10px;
+      border-color:#444444;
+      background-color:#444444;
+     }
    a
     {
       color:white;
@@ -79,19 +92,17 @@
 </h1>
           <form id="f1">
            <label>Enter pH value of your beverage, please!</label> <br><br>
-           <input type="text" id="a" > <br><br>
-         
-           
-           <input type="button" onclick="more_beverages()" value="Click here"><br><br>
+           <input placeholder="pH=Ex:4" type="text" id="a" > <br><br>
             <p id="p1"></p>
-           <input type="button" onclick="pH()" value="Common Beverages"><br><br>
+           <br><br><input id='button1' type="button" onclick="pH()" value="Click here"><br><br>
+        <input id='button2' type="button" onclick="more_beverages()" value="Common Beverages"><br><br>
            <script type="text/javascript">
            
                function more_beverages()
                {
-                
+                   window.open("morebeverages.html")
                }
-               function pH()
+         function pH()
                
          {
                
